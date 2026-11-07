@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; --bad:#c62828; --warn:#ef6c00; --note:#f9a825; --ok:#2e7d32; }
+body { width: 380px; margin: 0; padding: 12px; font: 13px/1.45 system-ui, sans-serif; }
+h1 { font-size: 16px; margin: 0 0 2px; }
+.mission { margin: 0 0 10px; opacity: .8; }
+label { display: block; margin: 8px 0; }
+input, select { width: 100%; box-sizing: border-box; padding: 6px; margin-top: 3px; }
+.row { display: flex; gap: 8px; }
+button { flex: 1; padding: 7px; cursor: pointer; }
+button.secondary { background: transparent; border: 1px solid currentColor; border-radius: 4px; }
+.hint, footer { font-size: 11px; opacity: .65; }
+#status { min-height: 1.4em; }
+.score { font-size: 28px; font-weight: 700; }
+.finding { border-left: 4px solid var(--note); padding: 4px 8px; margin: 8px 0; }
+.finding.s2 { border-color: var(--warn); } .finding.s3 { border-color: var(--bad); }
+.finding blockquote { margin: 4px 0; font-style: italic; opacity: .85; }
+.laws { font-size: 11px; opacity: .65; }

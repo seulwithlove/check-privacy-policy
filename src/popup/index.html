@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Check Privacy Policy</title>
+  <link rel="stylesheet" href="./popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Check Privacy Policy</h1>
+    <p class="mission">Your data is valuable. Know what you are agreeing to before you sign up.</p>
+  </header>
+
+  <details id="settings">
+    <summary>Settings (your own API key)</summary>
+    <label>Provider
+      <select id="provider"><option value="anthropic">Anthropic (Claude)</option><option value="openai">OpenAI</option></select>
+    </label>
+    <label>API key <input id="apiKey" type="password" autocomplete="off" placeholder="stored only in this browser" /></label>
+    <p class="hint">Your key never leaves your browser except to call the provider you chose. Only the policy text is sent.</p>
+    <button id="save">Save</button>
+  </details>
+
+  <label>Privacy policy URL <input id="url" type="url" placeholder="https://example.com/privacy" /></label>
+  <div class="row">
+    <button id="detect" class="secondary">Find on this page</button>
+    <button id="analyze">Analyze</button>
+  </div>
+  <p id="status" role="status"></p>
+  <section id="result" hidden></section>
+  <footer>Automated analysis can be wrong and is not legal advice.</footer>
+  <script type="module" src="./popup.ts"></script>
+</body>
+</html>
