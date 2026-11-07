@@ -1,10 +1,33 @@
 {
   "manifest_version": 3,
   "name": "Check Privacy Policy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Know what you are agreeing to. Reads a privacy policy and flags clauses that put your data at risk.",
-  "action": { "default_popup": "index.html", "default_title": "Check Privacy Policy" },
-  "permissions": ["storage", "activeTab", "scripting"],
-  "host_permissions": ["https://api.anthropic.com/*", "https://api.openai.com/*"],
-  "optional_host_permissions": ["https://*/*", "http://*/*"]
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Check Privacy Policy",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.anthropic.com/*",
+    "https://api.openai.com/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }
