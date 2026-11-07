@@ -18,5 +18,11 @@ npm test
 
 Rules live in `rubric/core.json`; contributions that improve them are welcome. Automated analysis can be wrong and is not legal advice.
 
+## Privacy
+- No telemetry, analytics or accounts. There is no server of ours.
+- Your API key is stored only in `chrome.storage.local` in your browser and is sent only to the provider you chose.
+- Only the privacy-policy text is sent to that provider for analysis. Saved results (policy-derived findings, never your key) are cached locally, up to 50.
+- Output is automated and is not legal advice.
+
 ## License
 MIT. See [LICENSE](LICENSE).

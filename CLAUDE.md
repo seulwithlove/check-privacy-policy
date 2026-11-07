@@ -12,7 +12,7 @@ People should know, and care about, how much their data matters today. Most serv
 - `npm run typecheck`
 
 ## Architecture
-Phase 1 is popup-only (no background worker, no backend). Vite root is `src/popup`; static assets and `manifest.json` come from `public/`.
+Popup-only (no background worker, no backend). Vite root is `src/popup`; static assets and `manifest.json` come from `public/`.
 
 - `src/core/analyzer.ts`: pipeline. Chunk the policy text, send each chunk with the rubric to the LLM, parse the JSON reply, then **verify every finding's quote appears verbatim in the policy** (`verifyFindings`) and drop the rest. This anti-hallucination step is core; never bypass it. Then score.
 - `src/core/providers/index.ts`: `LlmProvider` adapters (Anthropic, OpenAI) calling the APIs directly from the browser. **BYOK:** the user's own API key lives in `chrome.storage.local` only; there is no server of ours. Adding a provider means adding a branch in `createProvider`.
@@ -21,7 +21,7 @@ Phase 1 is popup-only (no background worker, no backend). Vite root is `src/popu
 - `src/popup/`: UI and wiring. Fetching a policy requests per-origin optional host permission at click time (`optional_host_permissions` in the manifest); only the Anthropic/OpenAI API hosts are in fixed `host_permissions`.
 
 ## Planned (not built yet)
-Auto-detect on sign-up pages, per-jurisdiction rubric layers (GDPR/CCPA/PIPA; a Korean law MCP server is available for PIPA), a labeled eval set of real policies, optional self-hosted proxy, more providers, caching by policy hash.
+Auto-detect on sign-up pages, a labeled eval set of real policies, optional self-hosted proxy, more providers.
 
 ## Constraints
 - The tool itself must respect privacy: no telemetry; send only policy text to the user's chosen provider.
