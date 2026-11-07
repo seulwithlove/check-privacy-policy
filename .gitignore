@@ -35,5 +35,5 @@ Thumbs.db
 
 # Claude Code (personal/local files; shared subagents in .claude/agents stay tracked)
 .claude/settings.local.json
-CLAUDE.md
+CLAUDE.local.md
 graphify-out/
