@@ -1,0 +1,14 @@
+[
+  { "id": "pipa-no-separate-consent-for-sensitive", "title": "Sensitive data without separate consent", "severity": 3,
+    "description": "The service collects sensitive information (health, beliefs, political views, union or party membership, sex life and similar) but does not say it asks for consent separately from other consents. Do not flag if separate or explicit consent for sensitive data is stated, or if collection is required by law.",
+    "laws": ["PIPA Art. 23"] },
+  { "id": "pipa-overseas-transfer-undisclosed", "title": "Overseas transfer details not disclosed", "severity": 2,
+    "description": "Data of Korean users is provided, outsourced or stored abroad, but the policy omits the items transferred, destination country, recipient name, purpose and retention, or how to refuse the transfer. Do not flag if these details are given.",
+    "laws": ["PIPA Art. 28-8"] },
+  { "id": "pipa-resident-registration-number", "title": "Collects resident registration number", "severity": 3,
+    "description": "The service collects the Korean resident registration number (주민등록번호) with no legal requirement cited, or requires it to sign up. Do not flag if a specific law requiring it is cited and sign-up works without it.",
+    "laws": ["PIPA Art. 24-2"] },
+  { "id": "pipa-no-breach-notification", "title": "No commitment to notify users of a leak", "severity": 2,
+    "description": "The policy does not say that affected users will be told promptly if their personal data leaks, or disclaims responsibility for leaks. Do not flag if a notification commitment is described.",
+    "laws": ["PIPA Art. 34"] }
+]

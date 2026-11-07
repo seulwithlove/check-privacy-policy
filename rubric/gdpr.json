@@ -1,0 +1,11 @@
+[
+  { "id": "gdpr-no-legal-basis", "title": "No stated legal basis for processing", "severity": 2,
+    "description": "The policy describes collecting and using personal data of people in the EU/EEA/UK but never says on what legal ground (for example consent, contract, legitimate interests, legal obligation). Do not flag if any legal basis is named, even briefly.",
+    "laws": ["GDPR Art. 6"] },
+  { "id": "gdpr-international-transfer-no-safeguards", "title": "Transfers outside the EU/EEA without named safeguards", "severity": 2,
+    "description": "Data of EU/EEA/UK users is sent to countries outside the EU/EEA (for example the US) and the policy names no transfer mechanism such as standard contractual clauses, binding corporate rules or an adequacy decision. Do not flag if a mechanism is named.",
+    "laws": ["GDPR Art. 46"] },
+  { "id": "gdpr-no-breach-notification", "title": "No commitment to report data breaches", "severity": 2,
+    "description": "The policy says nothing about notifying authorities or users after a data breach, or explicitly disclaims any duty to notify. Do not flag if a breach notification process is described.",
+    "laws": ["GDPR Art. 33"] }
+]

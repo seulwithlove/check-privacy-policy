@@ -1,0 +1,11 @@
+[
+  { "id": "ccpa-no-opt-out-sale", "title": "No way to opt out of sale or sharing", "severity": 3,
+    "description": "The policy says personal data is sold or shared for advertising, but gives California users no opt-out link or mechanism (for example 'Do Not Sell or Share My Personal Information', 'Your Privacy Choices' or a global privacy control). Do not flag if an opt-out is offered.",
+    "laws": ["CCPA 1798.135"] },
+  { "id": "ccpa-no-limit-sensitive", "title": "No way to limit use of sensitive information", "severity": 2,
+    "description": "The policy collects sensitive personal information (such as precise location, health, financial account or government ID data) and uses it beyond providing the service, with no option for California users to limit that use. Do not flag if a limit option is offered.",
+    "laws": ["CCPA 1798.121"] },
+  { "id": "ccpa-penalty-for-exercising-rights", "title": "Penalized for using privacy rights", "severity": 3,
+    "description": "The policy says users who exercise privacy rights (opt-out, delete, access) may be denied service, charged more, or given lower-quality service. Do not flag a clearly explained loyalty or financial-incentive program that the user opts into.",
+    "laws": ["CCPA 1798.125"] }
+]
