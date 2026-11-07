@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output and release packages
+dist/
+build/
+*.zip
+*.crx
+*.pem
+coverage/
+
+# Environment and secrets (API keys must never be committed)
+.env
+.env.*
+!.env.example
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+.npm/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# TypeScript / tooling caches
+*.tsbuildinfo
+.vite/
+.eslintcache
+
+# Claude Code (personal/local files; shared subagents in .claude/agents stay tracked)
+.claude/settings.local.json
+CLAUDE.md
+graphify-out/
